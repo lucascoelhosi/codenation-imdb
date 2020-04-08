@@ -1,0 +1,445 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1rem;
+	font-family: "Montserrat", sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 90%;
+	max-width: 1180px;
+	padding: 0 10px;
+}
+
+/* Header */
+
+.index-container header {
+	background-attachment: fixed;
+	background-image: url('../img/capa-madmax.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	padding: 20px;
+	height: 90vh;
+	width: 100%;
+
+	animation-delay: 10s;
+	animation-duration: 10s;
+	animation-name: header-poster;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.index-container header:after {
+	background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.6) 0%,
+		rgba(0, 212, 255, 0) 75%
+	);
+	content: "";
+	width: 100%;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.nav-header {
+	z-index: 2;
+	display: flex;
+}
+
+.nav-header .container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-header .container-logo {
+	display: inline-block;
+}
+
+.nav-header .container-list {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-header .container-list-item {
+	margin: 0 25px;
+}
+
+.nav-header .container-list-item a,
+.nav-catalog .nav-catalog-list .item a {
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+}
+
+.container-list-item a:hover {
+	color: #e4bb23;
+}
+
+.container-user {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.container-user-img {
+	border-radius: 100%;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	width: 45px;
+	height: 45px;
+	margin-right: 15px;
+	overflow: hidden;
+}
+
+.container-user-img img {
+	width: 100%;
+	height: auto;
+}
+
+.container-user-name {
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+
+.content-header .container {
+	position: relative;
+	z-index: 2;
+}
+
+.content-header .content-title {
+	color: #fff;
+	font-size: 7.5rem;
+	font-weight: bold;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.content-header .content-genre {
+	display: flex;
+	margin: 15px 0 30px;
+	font-size: 13px;
+}
+
+.content-header .content-genre-item {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 15px;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+}
+
+.content-header .content-genre-item:hover {
+	color: #e4bb23;
+}
+
+.content-header .content-button {
+	display: inline-block;
+	padding: 15px 50px;
+	color: #000;
+	font-size: 1.5rem;
+	text-decoration: none;
+	background-color: #e4bb23;
+	border-radius: 40px;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+}
+
+.content-header .content-button:hover {
+	background-color: #bc9a1d;
+}
+
+.content-header .content-button i {
+	font-size: 1.5rem;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
+
+.content-header .content-info {
+	padding: 20px 0;
+	font-size: 1.4rem;
+	color: #fff;
+}
+
+.content-header .content-info p:last-child {
+	color: #bc9a1d;
+}
+
+/* Catalog */
+
+.catalog {
+	background-color: #f2f2f2;
+	width: 100%;
+}
+
+.nav-catalog .nav-catalog-list {
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.nav-catalog .nav-catalog-list .item {
+	margin: 0 20px;
+}
+
+.nav-catalog .nav-catalog-list .item a {
+	color: #e4bb23;
+	display: inline-block;
+	padding: 25px 0;
+	text-decoration: none;
+}
+
+.nav-catalog .nav-catalog-list .item a:hover {
+	box-shadow: inset 0 -1px 0 #e4bb23;
+}
+
+.catalog-list {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+	width: 100%;
+}
+
+.catalog-list .item {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	overflow: hidden;
+	width: 24%;
+}
+
+.catalog-list .item .film-poster {
+	margin: 0;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.catalog-list .item .film-poster img {
+	width: 100%;
+	height: auto;
+}
+
+.catalog-list .item .film-poster-info {
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	opacity: 0;
+	padding: 80px 20px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	transition: all 0.2s ease-in-out;
+	visibility: hidden;
+	width: 100%;
+	z-index: 1;
+}
+
+.catalog-list .item:hover .film-poster-info {
+	opacity: 1;
+	visibility: visible;
+}
+
+.catalog-list .item .film-poster-info h3 {
+	color: #e4bb23;
+	font-size: 2rem;
+	line-height: 1rem;
+	text-transform: uppercase;
+}
+
+.catalog-list .item .film-poster-link {
+	color: #fff;
+	font-size: 5rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.catalog-list .item .film-poster-link:hover {
+	color: #e4bb23;
+}
+
+.catalog-list .item .film-resume {
+	padding: 10px;
+	width: 100%;
+}
+
+.catalog-list .item .film-resume .title {
+	font-size: 1.3rem;
+	font-weight: bold;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.catalog-list .item .film-resume .genre {
+	margin: 10px 0;
+	display: flex;
+}
+
+.catalog-list .item .film-resume .genre a {
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #e4bb23;
+}
+
+.catalog-list .item .film-resume .genre a:hover {
+	text-decoration: underline;
+}
+
+.catalog-list .item .film-resume .score {
+	margin: 0;
+	align-items: center;
+	display: flex;
+	font-size: 2rem;
+	font-weight: bold;
+	justify-content: space-between;
+}
+
+.catalog-list .item .film-resume .score i {
+	color: #ccc;
+	cursor: pointer;
+}
+
+.catalog-list .item .film-resume .score i:hover {
+	color: #e74c3c;
+}
+
+.footer {
+	background-color: #fff;
+	color: #bababa;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer .footer-list {
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+.footer .footer-list .item {
+	margin: 0 20px;
+}
+
+.footer .footer-list .item:last-child {
+	margin-right: 0;
+}
+
+.footer .footer-list .item a {
+	font-size: 2.5rem;
+	color: #bababa;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.footer .footer-list .icone-twitter a:hover {
+	color: #55acee;
+}
+
+.footer .footer-list .icone-facebook a:hover {
+	color: #3b5998;
+}
+
+.footer .footer-list .icone-instagram a:hover {
+	color: #e95950;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+	html {
+		font-size: 50%;
+	}
+	.catalog-list .item {
+		flex: 1 0 200px;
+		max-width: calc(33.33333% - 8px);
+	}
+}
+
+@media (max-width: 620px) {
+	.catalog-list .item {
+		flex: 1 0 200px;
+		max-width: calc(50% - 8px);
+	}
+}
+
+@media (max-width: 425px) {
+	.catalog-list .item {
+		flex: 1 0 200px;
+		max-width: 100%;
+	}
+
+	.content-header .content-title {
+		font-size: 6rem;
+	}
+
+	.nav-header .container-list {
+		display: none;
+	}
+
+	.nav-catalog .nav-catalog-list {
+		display: block;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+/* Keyframes */
+
+@keyframes header-poster {
+	0%, 33% {
+		background-image: url('../img/capa-madmax.jpg');
+	}
+
+	33%, 66%{
+		background-image: url('../img/capa-madmax.jpg');
+	}
+
+	66%, 100% {
+		background-image: url('../img/capa-madmax2.jpg');
+	}
+}
