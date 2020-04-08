@@ -41,10 +41,3 @@ Neste desafio, você vai praticar os seus conhecimentos em:
 * ⚠️ [Ícones utilizados - Fontawesome](https://fonts.google.com/specimen/Montserrat);
 * 📜 [Guia HTML5](https://www.w3c.br/pub/Cursos/CursoHTML5/html5-web.pdf);
 * 📜 [Guia CSS3](https://www.w3c.br/pub/Materiais/PublicacoesW3C/guia-css-w3cbr.pdf).
-
-
-## Resultado
-
-
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a2f49e1d-46c7-4548-90f4-870339dfeab7/deploy-status)](https://app.netlify.com/sites/imdb-challenge1/deploys)
